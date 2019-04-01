@@ -1,0 +1,51 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.automic.ara.devlab</groupId>
+    <artifactId>jpetstore</artifactId>
+    <packaging>jar</packaging>
+    <version>${version}</version>
+	<properties>
+		<version>4.0.0-123-SNAPSHOT</version>
+	</properties>
+    <name>jpetstore</name>
+	<distributionManagement>
+		<repository>
+			<id>automic-ignite-repo</id>
+			<name>Internal Repository</name>
+			<url>http://vvnfibotool01:8081/nexus/content/repositories/ignite-repos/</url>
+		</repository>
+		<snapshotRepository>
+			<id>automic-ignite-repo-snapshot</id>
+			<name>Internal Repository</name>
+			<url>http://vvnfibotool01:8081/nexus/content/repositories/ignite-repos-snapshot/</url>
+		</snapshotRepository>
+	</distributionManagement>
+    <dependencies>
+    </dependencies>
+	<build>
+		<plugins>
+		  <plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-assembly-plugin</artifactId>
+			<executions>
+			  <execution>
+				<id>create-distribution</id>
+				<phase>package</phase>
+				<goals>
+				  <goal>single</goal>
+				</goals>
+				<configuration>
+				  <descriptors>
+					<descriptor>descriptor.xml</descriptor>
+				  </descriptors>
+				</configuration>
+			  </execution>
+			</executions>
+		  </plugin>
+		</plugins>
+	</build>
+	
+</project>
