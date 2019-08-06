@@ -13,14 +13,14 @@
     <name>jpetstore</name>
 	<distributionManagement>
 		<repository>
-			<id>automic-ignite-repo</id>
+			<id>automic-cda-repo</id>
 			<name>Internal Repository</name>
-			<url>http://vvnfibotool01:8081/nexus/content/repositories/ignite-repos/</url>
+			<url>http://vvndev06.sbb01.spoc.global:8081/repository/maven-central/</url>
 		</repository>
 		<snapshotRepository>
-			<id>automic-ignite-repo-snapshot</id>
+			<id>automic-cda-repo-snapshot</id>
 			<name>Internal Repository</name>
-			<url>http://vvnfibotool01:8081/nexus/content/repositories/ignite-repos-snapshot/</url>
+			<url>http://vvndev06.sbb01.spoc.global:8081/repository/maven-snapshots/</url>
 		</snapshotRepository>
 	</distributionManagement>
     <dependencies>
