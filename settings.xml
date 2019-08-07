@@ -1,14 +1,14 @@
 <settings>
 	<servers>
 		<server>
-			<id>automic-ignite-repo</id>
-			<username>deployment</username>
-			<password>ventum2011@</password>
+			<id>automic-cda-repo</id>
+			<username>admin</username>
+			<password>S3rv3r@Aut</password>
 		</server>
 		<server>
-			<id>automic-ignite-repo-snapshots</id>
-			<username>deployment</username>
-			<password>ventum2011@</password>
+			<id>automic-cda-repo-snapshots</id>
+			<username>admin</username>
+			<password>S3rv3r@Aut</password>
 		</server>
 	</servers>
 </settings>
