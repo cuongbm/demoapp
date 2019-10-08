@@ -11,18 +11,6 @@
 		<version>4.0.0-123-SNAPSHOT</version>
 	</properties>
     <name>jpetstore</name>
-	<distributionManagement>
-		<repository>
-			<id>automic-cda-repo</id>
-			<name>Internal Repository</name>
-			<url>http://vvndev06.sbb01.spoc.global:8081/repository/maven-releases/</url>
-		</repository>
-		<snapshotRepository>
-			<id>automic-cda-repo-snapshot</id>
-			<name>Internal Repository</name>
-			<url>http://vvndev06.sbb01.spoc.global:8081/repository/maven-snapshots/</url>
-		</snapshotRepository>
-	</distributionManagement>
     <dependencies>
     </dependencies>
 	<build>
