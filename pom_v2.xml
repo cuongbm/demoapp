@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0
+                             http://maven.apache.org/maven-v4_0_0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.automic.ara.devlab</groupId>
+    <artifactId>jpetstore</artifactId>
+    <packaging>jar</packaging>
+    <version>${version}</version>
+	<properties>
+		<version>4.0.0-123-SNAPSHOT</version>
+	</properties>
+    <name>jpetstore</name>
+	<distributionManagement>
+		<repository>
+			<id>automic-cda-repo</id>
+			<name>Internal Repository</name>
+			<url>http://vvndev06.sbb01.spoc.global:8081/repository/maven-releases/</url>
+		</repository>
+		<snapshotRepository>
+			<id>automic-cda-repo-snapshot</id>
+			<name>Internal Repository</name>
+			<url>http://vvndev06.sbb01.spoc.global:8081/repository/maven-snapshots/</url>
+		</snapshotRepository>
+	</distributionManagement>
+    <dependencies>
+    </dependencies>
+	<build>
+	<plugins>
+      <plugin>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.1.0</version>
+        <executions>
+          <execution>
+            <id>copy-resources</id>
+            <phase>validate</phase>
+            <goals>
+              <goal>copy-resources</goal>
+            </goals>
+            <configuration>
+              <outputDirectory>${basedir}/target</outputDirectory>
+              <resources>          
+                <resource>
+                  <directory>/src</directory>
+                  <filtering>true</filtering>
+                </resource>
+              </resources>              
+            </configuration>            
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+	</build>
+	
+</project>
